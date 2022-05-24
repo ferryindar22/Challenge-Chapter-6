@@ -1,0 +1,18 @@
+
+<html>
+<head>
+   <h1>User Game Detail</h1>
+</head>
+   
+<body>
+  <form action="/usergame/detail/<%= data.id %>" method="get">
+      <label for="title">Username</label>
+      <h1><%= data.username %></h1> 
+
+      <label for="title">Password</label>
+      <h2><%= data.password %></h2>
+  </form>
+</body>
+
+<button><a href="/usergame">Kembali</a></button>
+</html>

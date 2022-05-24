@@ -1,0 +1,31 @@
+
+<html>
+<head>
+   <h1>User Game</h1>
+</head>
+   
+<body>
+    <table>
+        <tr>
+          <th>username</th>
+          <th>password</th>
+          <th>action</th>
+        </tr>
+        <tr>
+        <% data.forEach (i=>{%>
+          <td><%= i.username%></td>
+          <td><%= i.password%></td>
+          <td>
+            <button> <a href="/usergame/detail/<%= i.id%>">Detail</a></button>
+            <button> <a href="/usergame/edit/<%= i.id%>">Edit</a></button>
+            <button> <a href="/usergame/delete/<%= i.id%>">Delete</a></button>
+          </td>
+        </tr>
+        <% }) %>
+    </table>
+    
+
+</body>
+
+<button><a href="/usergame/create">Add User</a></button>
+</html>

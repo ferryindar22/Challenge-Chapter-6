@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <h1>
+        Edit Data
+        </h1>
+    </head>
+    <body>
+        <form action="/usergame/edit/<%= data.id %>" method="post">
+            <label for="title">Username</label>
+            <br>
+            <input type="text" name="username" value="<%= data.username %>"/>
+            <br>
+
+            <label for="title">Password</label>
+            <br>
+            <input type="text" name="password" value="<%= data.password %>"/>
+            <br>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </body>
+</html>
